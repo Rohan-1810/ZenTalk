@@ -8,7 +8,8 @@
 }
 .card{
     height: 20rem;
-    background: linear-gradient(51deg, #d2fffc -1%, #ffe9e2 101%);
+    background-color:aliceblue;
+
 }
 .scard{
     display: flex;
@@ -16,7 +17,6 @@
 }
 .gschem{
     background: linear-gradient(51deg, #d2fffc -1%, #ffe9e2 101%);
-    background-color: rgb(13, 8, 92);
-}
+    }
 
     
