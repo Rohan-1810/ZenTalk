@@ -62,7 +62,7 @@ function Login() {
       >
         <CircularProgress color="secondary" />
       </Backdrop>
-        <h2>Login</h2>
+        <h2 className='log'>Login</h2>
         <Form className='form' onSubmit={loginHandler}>
         
       <Form.Group className="mb-3" controlId="formBasicEmail">

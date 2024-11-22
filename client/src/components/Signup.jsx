@@ -64,7 +64,7 @@ function Signup() {
       >
         <CircularProgress color="secondary" />
       </Backdrop>
-        <h2>Create your Account</h2>
+        <h2 className='log'>Create your Account</h2>
         <Form className='form' onSubmit={signUpHandler}>
         
       <Form.Group className="mb-3" controlId="formBasicUsername" >
