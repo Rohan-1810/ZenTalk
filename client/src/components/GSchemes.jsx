@@ -96,7 +96,7 @@ Aims to reduce stigma and improve accessibility.
         <Card.Title>The Live Love Laugh Foundation (TLLLF)</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">2015</Card.Subtitle>
         <Card.Text>
-        Focus: Spreading awareness about mental health, reducing stigma, and offering support to those in need.
+        Spreading awareness about mental health, reducing stigma, and offering support to those in need.
 
         </Card.Text>
         <Button variant="primary">Explore more</Button>
