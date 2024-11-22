@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import  {  useState } from 'react'
 import "./styles/Signup.css"
 import Form from 'react-bootstrap/Form';
 import { useNavigate } from 'react-router-dom';
@@ -75,7 +75,7 @@ function Login() {
         <Form.Control type="password" placeholder="Password" required onChange={changeHandler} name='password'/>
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
-        <Form.Text>Don't have an account? <a className='link' onClick={()=>navigate("/user/signup")}>Signup</a></Form.Text>
+        <Form.Text>Dont have an account? <a className='link' onClick={()=>navigate("/user/signup")}>Signup</a></Form.Text>
       </Form.Group>
       <button className='submit' type='submit'>Submit</button>
       {logInStatus ? (
