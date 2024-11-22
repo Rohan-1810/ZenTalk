@@ -2,13 +2,20 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import React from 'react'
 import "./styles/Schemes.css"
+import { Navbar } from 'react-bootstrap';
+import Navbar1 from './Navbar1';
 
 function Schemes() {
     return (
+      <div>
+
+        <Navbar1/>
         <div className='gschem'>
+          
             <h2 className='heading'>Government Schemes</h2>
             <div className='scard'>
         <Card style={{ width: '22rem' }} className='card'>
+        
       <Card.Body >
         <Card.Title>National Mental Health Programme (NMHP):</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">1982</Card.Subtitle>
@@ -192,6 +199,9 @@ Operates nationwide and aims to make mental health support accessible.
         <Button variant="primary">Explore more</Button>
       </Card.Body>
     </Card></div>
+    <br/>
+    <hr></hr>
+        </div>
         </div>
     )
 }

@@ -1,13 +1,12 @@
 /* Full-screen carousel image styling */
-.carousel-item {
-    position: relative;
-    height: 500px; /* Adjust the height of the carousel */
+/* .carousel-item {
+    
   }
   
   .carousel-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the space without stretching */
+    object-fit: cover; 
   }
   
   .carousel-caption {
@@ -20,7 +19,7 @@
   }
   
   .carousel-caption h2 {
-    font-size: 3rem; /* Adjust the heading size */
+    font-size: 3rem; 
     font-weight: bold;
   }
   
@@ -40,5 +39,30 @@
   
   .carousel-caption button:hover {
     background-color: rgba(255, 255, 255, 1);
-  }
+  } */
   
+  .logo{
+    font-family: "Monotype Corsiva",cursive;
+    font-size: 3rem !important;
+    background: linear-gradient(76.9deg, rgb(250, 52, 227) 27.2%, rgb(5, 201, 255) 79.9%) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    color: transparent !important;
+  }
+  .drop{
+    font-size: 1.3rem !important;
+
+  }
+  .navbar{
+    background-color: aliceblue;
+    
+  }
+  .logo:hover{
+    background: linear-gradient(76.9deg, rgb(250, 52, 227) 27.2%, rgb(5, 201, 255) 79.9%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .nav1{
+    margin-left:2rem ;
+  }

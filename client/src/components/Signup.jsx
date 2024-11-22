@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from "axios";
 import { Backdrop, CircularProgress } from '@mui/material';
 import Toaster from './Toaster.jsx'
+import Navbar1 from './Navbar1.jsx';
 
 function Signup() {
   const [signInStatus, setSignInStatus] = useState("");
@@ -58,6 +59,8 @@ function Signup() {
     return (
       
         <>
+        <div className='signpage'>
+        <Navbar1/>
         <Backdrop
         sx={{ color: "#fff", zIndex: (theme) => theme.zIndex.drawer + 1 }}
         open={loading}
@@ -88,6 +91,7 @@ function Signup() {
               <Toaster key={signInStatus.key} message={signInStatus.msg} />
             ) : null}
     </Form>
+    </div>
         </>
         
     );

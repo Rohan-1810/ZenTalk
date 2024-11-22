@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import "./styles/Quiz.css"
+import Navbar1 from './Navbar1';
 
 function Quiz({quizData}) {
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0); 
@@ -10,7 +11,8 @@ function Quiz({quizData}) {
     const handleNext = () => {
          if (currentQuestionIndex < quizData.length - 1) 
         { setCurrentQuestionIndex(currentQuestionIndex + 1); } 
-         else { calculateTotalScore(); setShowResults(true); }};
+         else {
+            calculateTotalScore(); setShowResults(true); }};
 
     const handlePrev = () => {
         if (currentQuestionIndex > 0) {
@@ -43,6 +45,7 @@ function Quiz({quizData}) {
     const currentQuestion = quizData[currentQuestionIndex];
     return (
         <div >
+            
             {showResults ? ( <div className='tscore'> <h2 >Your Total Score: {totalScore}</h2> 
             <p className='sugg'>{getSuggestions(totalScore)}</p> </div> ):(<div>
             <p className='ques'>

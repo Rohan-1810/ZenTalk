@@ -1,11 +1,12 @@
-import { Navbar, Nav, Container,Carousel, NavDropdown, Button,  Card } from "react-bootstrap";
+import {  Container,Carousel, Button,  Card } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Schemes from "./Schemes.jsx";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-// import Footer from "./footer.jsx";
-
+import "./styles/Home.css";
+import { useNavigate } from "react-router-dom";
+import Navbar1 from "./Navbar1.jsx";
 
 
 
@@ -665,60 +666,11 @@ function CarouselFadeExample() {
 
 // Main App Component
 function App() {
+  const navigate=useNavigate();
   return (
     <div>
-      <Navbar bg="light" expand="lg">
-        <Container>
-          {/* Leftmost Item */}
-          <Navbar.Brand href="#home">Zentalk</Navbar.Brand>
-
-          {/* Toggle for small screens */}
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            {/* Rightmost Dropdowns */}
-            <Nav className="ms-auto">
-              <NavDropdown title="We Help With" id="we-help-with-dropdown">
-                <NavDropdown.Item href="#action/3.1">Relationship Counselling</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Stress Anxiety Depression</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Confidence</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4">Trauma</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.5">Managing Workplace</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.6">Life-Style Issues</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.7">LGBTQ+</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.8">Women Centric Challenges</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.9">Parenting</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.10">ADHD</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.11">Psychiatric Suport</NavDropdown.Item>
-              </NavDropdown>
-              <NavDropdown title="Self Help" id="self-help-dropdown">
-                <NavDropdown.Item href="#action/3.1">Activities</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Yogic Exercises</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Wellness Stories</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4">Articles</NavDropdown.Item>
-              </NavDropdown>
-              <NavDropdown title="Menty Quiz" id="menty-quiz-dropdown">
-                <NavDropdown.Item href="#action/3.1">Am I Sad or Depressed?</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Are you in an unhealthy relationship?</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Am I Anxious?</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Am I Stressed?</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Happiness Scale</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Parenting</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Breakup</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">How am I Sleeping?</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Alcohol/Drug Addiction Test</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Workplace Stress Test</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Health Anxiety</NavDropdown.Item>
-              </NavDropdown>
-            </Nav>
-
-            {/* Sign In Button */}
-            <Button variant="outline-primary" href="#signin" className="ms-3">
-              Sign In
-            </Button>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-
+      
+      <Navbar1/>
       {/* Add the Controlled Carousel here */}
       <CarouselFadeExample/>
      

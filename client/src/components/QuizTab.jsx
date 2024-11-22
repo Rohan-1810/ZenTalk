@@ -1,5 +1,6 @@
 import React from 'react'
 import Quiz from './Quiz';
+import Navbar1 from './Navbar1';
 
 function QuizTab() {
     const mentalHealthQuiz = [
@@ -72,6 +73,7 @@ function QuizTab() {
     
     return (
         <div className='quiz'>
+            <Navbar1/>
             <h3 className='menty'>Menty Quiz</h3>
             <Quiz quizData={mentalHealthQuiz}/>
         </div>

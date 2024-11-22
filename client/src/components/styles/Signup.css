@@ -55,3 +55,7 @@
     gap: 1rem;
     height: 90vh;
 }
+.signpage{
+    background: linear-gradient(51deg, #d2fffc -1%, #ffe9e2 101%);
+    height: 100vh;
+}
