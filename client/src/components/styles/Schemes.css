@@ -1,4 +1,22 @@
 .heading{
-    color: aqua;
+    font-family: Poppins;
+    width: fit-content;
+    font-size: 3rem;
+    margin: 0rem 0rem 2rem 5rem ;
+    padding-top: 3rem;
     
 }
+.card{
+    height: 20rem;
+    background: linear-gradient(51deg, #d2fffc -1%, #ffe9e2 101%);
+}
+.scard{
+    display: flex;
+    justify-content: space-around;
+}
+.gschem{
+    background: linear-gradient(51deg, #d2fffc -1%, #ffe9e2 101%);
+    background-color: rgb(13, 8, 92);
+}
+
+    
