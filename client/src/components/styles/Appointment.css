@@ -1,0 +1,68 @@
+
+  .in, textarea {
+    margin-left: 3rem !important;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    
+  }
+  .appointment-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .submit-button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 7rem;
+    align-self: self-end;
+    margin-right: 3.7rem;
+  }
+  
+  .submit-button:hover {
+    background-color: #45a049;
+  }
+  
+  .thank-you-message {
+    text-align: center;
+    color: #ddd;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 40vh;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .appointment-container{
+    background-image: url('./mh.jpg');
+    height: 100vh;
+  }
+  .book{
+    color: bisque;
+    text-align: center;
+   
+  }

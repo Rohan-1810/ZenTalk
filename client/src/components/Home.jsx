@@ -175,7 +175,7 @@ function Footer() {
           <i className="fab fa-twitter" style={footerStyles.icon}></i>
           <i className="fab fa-youtube" style={footerStyles.icon}></i>
         </div>
-        <p>Copyright © 2023 Virzen Wellness Private Limited</p>
+        <p>Copyright © 2024 ZenTalk Private Limited</p>
         <div style={footerStyles.legalLinks}>
           <a href="#" style={footerStyles.link}>
             Privacy Policy
@@ -230,10 +230,12 @@ const cardsData = [
   {
     title: "1-1 Therapy Session",
     text: "Our team of dedicated and trained counselors offer compassionate one-on-one therapy through video, call, and chat modes.",
+    page:"/therapy"
   },
   {
     title: "1-1 Psychiatric Session",
     text: "Consult our licensed psychiatrist, with verified credentials of MBBS & MD. Your mental health is in expert hands.",
+    page:"/therapy"
   },
   {
     title: "Free Assessment",
@@ -301,7 +303,7 @@ function CardsSlider() {
                 >
                   {card.text}
                 </Card.Text>
-                <Button variant="primary">Lets Start!</Button>
+                <Button variant="primary" href={card.page}>Lets Start!</Button>
               </Card.Body>
             </Card>
           </div>
@@ -393,6 +395,7 @@ const TherapySection = () => {
 // How Online therapy helps
 
 const OnlineTherapy = () => {
+  const navigate=useNavigate();
   return (
     <div style={styles.container}>
       <h1 style={styles.title}>How Online Therapy Helps</h1>
@@ -421,8 +424,8 @@ const OnlineTherapy = () => {
           />
         </div>
       </div>
-      <button style={styles.button} >Start Therapy</button>
-    </div>
+      <button style={styles.button} onClick={()=>navigate("/therapy")}>Start Therapy</button>
+      </div>
   );
 };
 
@@ -525,11 +528,16 @@ function WhyBetterLyf() {
                 imgSrc: "./globe.jpg",
                 alt: "Multi-Lingual Support",
                 text: "Multi Lingual Support \n10+ Languages",
-              },
+              },{
+                imgSrc: "./laptop.jpeg",
+                alt: "ZenTalk",
+                text:""
+              }
             ].map((item, index) => (
-              <div className="therapist-box text-center m-3" key={index} style={{ width: "200px" }}>
+              <div className="therapist-box text-center m-3" key={index} style={{ width: "180px" }}>
                 <div className="img-container mb-3">
                   <img src={item.imgSrc} alt={item.alt} className="img-fluid" />
+
                 </div>
                 <h6>{item.text.split("\n").map((line, i) => (<div key={i}>{line}</div>))}</h6>
               </div>
@@ -538,17 +546,12 @@ function WhyBetterLyf() {
 
           {/* Right Section */}
           <div className="why-right">
-            <img
-              src="/images/computerswebp.webp"
-              alt="ZenTalk"
-              className="img-fluid"
-              style={{ maxWidth: "100%", height: "auto" }}
-            />
+            
           </div>
         </div>
 
         <div className="text-center mt-5">
-          <Button style={{ backgroundColor: 'rgb(150, 148, 255)', color: '#fff', border: 'none' }}  href="#startTherapy">
+          <Button style={{ backgroundColor: 'rgb(150, 148, 255)', color: '#fff', border: 'none' }}  href="/therapy">
             Start Therapy
           </Button>
         </div>

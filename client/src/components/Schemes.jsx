@@ -5,8 +5,9 @@ function Schemes() {
   return (
     <div style={{ height: "100vh", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
       {/* Centered Heading */}
+      <br/><br/>
       <h1 className="text-center mb-4">
-        <strong>What Improves With Therapy</strong>
+        <strong >What Improves With Therapy</strong>
       </h1>
 
       {/* Cards Section */}

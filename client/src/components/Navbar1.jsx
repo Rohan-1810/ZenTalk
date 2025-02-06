@@ -9,7 +9,7 @@ function Navbar1() {
     <Navbar expand="lg" className="bg-body-tertiary" >
             <Container className='nav1'>
             
-          <Navbar.Brand href="/" className="logo" >Zentalk</Navbar.Brand>
+          <Navbar.Brand href="/" className="logo" >ZenTalk</Navbar.Brand>
 
           {/* Toggle for small screens */}
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
